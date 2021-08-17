@@ -1,2 +1,1 @@
-# melody
-Learn project GLO Academy
+# Melody - Learn project GLO Academy
