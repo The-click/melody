@@ -1,7 +1,31 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueRegular.eot');
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeueRegular.woff2') format('woff2'), url('../fonts/BebasNeueRegular.woff') format('woff'), url('../fonts/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueLight.eot');
+    src: local('Bebas Neue Light'), local('BebasNeueLight'), url('../fonts/BebasNeueLight.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeueLight.woff2') format('woff2'), url('../fonts/BebasNeueLight.woff') format('woff'), url('../fonts/BebasNeueLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
 }
 
 body {
@@ -67,4 +91,71 @@ body {
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
+}
+
+.main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 58px 0 0 0;
+    display: flex;
+}
+
+.main-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 37px;
+    line-height: 44.4px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #635854;
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+}
+
+.home-img path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.home-img path:hover {
+    opacity: 1;
+}
+
+.counter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter-arrow-down {
+    transform: rotateX(180deg);
+}
+
+.counter-button {
+    cursor: pointer;
+}
+
+.button-summary {
+    font-family: 'Roboto', sans-serif;
+    background: #3596F5;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px 36px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.counter {
+    color: #635854;
+    font-size: 124px;
+    display: inline-block;
+    padding: 20px 0;
 }
